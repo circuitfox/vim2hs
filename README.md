@@ -22,7 +22,7 @@ Features
 * Unicode conceals for various operators and syntax, such as lambda and
   function composition.
 * Integrates with third-party plugins, but doesn't require them:
-  snippets for UltiSnips and patterns for Tabular.
+  patterns for Tabular.
 * Posts buffers and line-ranges to [hpaste.org](http://hpaste.org).
 * Highly configurable, most of the above can be disabled if it gets in the
   way.
@@ -225,12 +225,6 @@ let g:haskell_fold = 1 " Use vim2hs' folding function
 let g:haskell_fold = 2 " Use vim's foldtext
 ```
 
-### UltiSnips
-
-If you're using the excellent
-[UltiSnips](https://github.com/sirver/ultisnips) Vimscript, vim2hs provides
-some useful snippets for Haskell programming.  You can list all active
-snippets by hitting `Ctrl+Tab` in INPUT mode.
 
 ### Tabular
 
