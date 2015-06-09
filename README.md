@@ -214,6 +214,17 @@ it globally like so:
 let g:hpaste_author = 'donri'
 ```
 
+### Folding
+
+By default vim2hs will use its own function to set foldtext, but this can be
+disabled or set to use vim's global foldtext.
+
+```vim
+let g:haskell_fold = 0 " No folding whatsoever
+let g:haskell_fold = 1 " Use vim2hs' folding function
+let g:haskell_fold = 2 " Use vim's foldtext
+```
+
 ### UltiSnips
 
 If you're using the excellent

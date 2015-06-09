@@ -96,7 +96,9 @@ endfunction " }}}
 
 function! vim2hs#haskell#editing#folding() " {{{
   setlocal foldmethod=syntax
-  setlocal foldtext=vim2hs#haskell#editing#foldtext()
+  if g:haskell_fold == 1
+    setlocal foldtext=vim2hs#haskell#editing#foldtext()
+  endif
 endfunction " }}}
 
 

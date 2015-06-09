@@ -60,5 +60,7 @@ function! vim2hs#cabalconfig#folds() " {{{
     \ transparent fold
 
   setlocal foldmethod=syntax
-  setlocal foldtext=getline(v:foldstart)
+  if g:haskell_fold == 1
+    setlocal foldtext=getline(v:foldstart)
+  endif
 endfunction " }}}
